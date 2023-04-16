@@ -1,8 +1,12 @@
 /*=== abstracts css start === */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
-  font-family: "Jasmine_and_Greentea";
-  src: url(../fonts/Jasmine_and_Greentea.otf);
+  font-family: "GOTHIC";
+  src: url(../fonts/GOTHIC.TTF);
+}
+@font-face {
+  font-family: "GOTHICB";
+  src: url(../fonts/GOTHICB.TTF);
 }
 @font-face {
   font-family: "Infinite-Beyond";
@@ -189,7 +193,7 @@ body {
   border-radius: 0;
 }
 .back-office .btn-red:hover {
-  border-color: #9e0404;
+  background-color: #bb0909;
 }
 @media screen and (max-width: 1399px) {
   .back-office .btn-red {
@@ -564,6 +568,75 @@ body {
   .backoffice-video-section h2 {
     font-size: 22px;
   }
+}
+
+.payment {
+  font-family: "GOTHICB";
+}
+@media (max-width: 1399px) {
+  .payment .heading-3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .payment .heading-3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .payment h3,
+  .payment .heading-3 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .payment .preline-lg {
+    white-space: pre-line;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .payment .payment-proof label {
+    font-size: 1.25rem;
+  }
+}
+.payment .payment-proof .btn-red {
+  color: #fff;
+  background: linear-gradient(#fa7171, #910909);
+  border: none;
+  font-size: 2rem;
+  padding-inline: 1.5rem;
+  text-transform: uppercase;
+}
+.payment .payment-proof .btn-red:hover {
+  background: linear-gradient(#910909, #fa7171);
+}
+@media (min-width: 768px) {
+  .payment .payment-proof .btn-red {
+    min-width: 150px;
+    padding-inline: 1.5rem;
+  }
+}
+.payment .payment-proof .btn-blue {
+  color: #fff;
+  background: linear-gradient(#70b3f8, #0c4f94);
+  border: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.payment .payment-proof .btn-blue:hover {
+  background: linear-gradient(#0c4f94, #70b3f8);
+}
+@media (min-width: 768px) {
+  .payment .payment-proof .btn-blue {
+    min-width: 150px;
+    padding-inline: 1.5rem;
+  }
+}
+.payment .form-select,
+.payment .form-control {
+  box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0;
 }
 
 /*===// end of pages css === */
