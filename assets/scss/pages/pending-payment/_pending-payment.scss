@@ -1,0 +1,98 @@
+.pending-payment {
+    font-family: 'GOTHICB';
+
+    .heading-bg {
+        background-color: #000;
+        color: #fff;
+        clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
+        padding: 10px;
+        max-width: 90%;
+
+        @media (min-width: 768px) {
+            max-width: 80%;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 60%;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1rem;
+        }
+    }
+
+    .table-heading {
+        @media (max-width: 991px) {
+            font-size: 1.25rem;
+        }
+
+        @media (max-width: 767px) {
+            font-size: .875rem;
+        }
+    }
+
+    .table {
+        &.table-bordered>:not(caption)>* {
+            border-width: 1px;
+        }
+
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        tr {
+            border-color: #000;
+        }
+
+        th,
+        td {
+            text-align: center;
+            vertical-align: middle;
+
+            @media (min-width: 1200px) {
+                font-size: 1.25rem;
+            }
+
+            @media (max-width: 767px) {
+                font-size: .75rem;
+            }
+        }
+
+        .btn {
+            color: #fff;
+            border: none;
+            text-transform: uppercase;
+            min-width: 100px;
+
+            @media (max-width: 768px) {
+                font-size: 0.75rem;
+            }
+
+            &.btn-green {
+                background: linear-gradient(#60e181, #038424);
+
+                &:hover {
+                    background: linear-gradient(#038424, #60e181);
+                }
+            }
+
+            &.btn-red {
+                background: linear-gradient(#fa7171, #910909);
+
+                &:hover {
+                    background: linear-gradient(#910909, #fa7171);
+                }
+            }
+
+            &.btn-cyan {
+                background: linear-gradient(#50d3eb, #03869d);
+
+                &:hover {
+                    background: linear-gradient(#03869d, #50d3eb);
+                }
+            }
+        }
+
+    }
+}

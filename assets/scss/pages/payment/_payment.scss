@@ -35,38 +35,32 @@
             }
         }
 
-        .btn-red {
+        .btn {
             color: #fff;
-            background: linear-gradient(#fa7171, #910909);
             border: none;
             font-size: 2rem;
             padding-inline: 1.5rem;
             text-transform: uppercase;
 
-            &:hover {
-                background: linear-gradient(#910909, #fa7171);
-            }
-
             @media (min-width: 768px) {
                 min-width: 150px;
-                padding-inline: 1.5rem;
-            }
-        }
-
-        .btn-blue {
-            color: #fff;
-            background: linear-gradient(#70b3f8, #0c4f94);
-            border: none;
-            font-size: 2rem;
-            text-transform: uppercase;
-
-            &:hover {
-                background: linear-gradient(#0c4f94, #70b3f8);
             }
 
-            @media (min-width: 768px) {
-                min-width: 150px;
-                padding-inline: 1.5rem;
+            &.btn-red {
+                background: linear-gradient(#fa7171, #910909);
+
+                &:hover {
+                    background: linear-gradient(#910909, #fa7171);
+                }
+
+            }
+
+            &.btn-blue {
+                background: linear-gradient(#70b3f8, #0c4f94);
+
+                &:hover {
+                    background: linear-gradient(#0c4f94, #70b3f8);
+                }
             }
         }
     }

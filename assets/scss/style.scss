@@ -16,6 +16,7 @@
 @import 'layouts/navbar';
 @import 'layouts/backoffice-navbar';
 @import 'layouts/sideNavBackoffice';
+@import 'layouts/footer';
 // @import 'layouts/footer';
 /*===// end of layouts css === */
 
@@ -28,6 +29,7 @@
 @import 'pages/home/home';
 @import 'pages/backoffice/backoffice';
 @import 'pages/payment/payment';
+@import 'pages/pending-payment/pending-payment';
 /*===// end of pages css === */
 
 /*=== ? css start === */

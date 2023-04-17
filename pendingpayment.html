@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="back-office">
+<body>
   <!-- header -->
   <header class="header fixed-top py-1 backoffice-header shadow-sm">
     <div class="container-fluid">
       <div class="header-content d-flex align-items-center mx-0 mx-xl-4">
-        <img class="img-fluid brand-logo" src="assets/images/backoffice/logo.png" alt="logo">
+        <a href="#"> <img class="img-fluid brand-logo" src="assets/images/backoffice/logo.png" alt="logo"></a>
         <h1 class="text-center heading d-xl-block d-none mx-auto">WELCOME - &lt;NAME HERE&gt;
         </h1>
         <div class="d-xl-none d-flex align-items-center ms-auto">
@@ -55,8 +55,74 @@
     <main class="main-body">
       <div class="container-fluid px-4">
 
+        <!-- ? starts here -->
+        <section class="pending-payment">
+          <h1 class="fw-bold mb-4">PENDING PAYMENTS</h1>
+          <h4 class="heading-bg">PENDING RECEIVED PAYMENTS</h4>
+          <h4 class="table-heading py-2">Please check your payment processor before your approve the transaction.</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th> Payment Form </th>
+                  <th> Amount </th>
+                  <th> Transaction ID: </th>
+                  <th> Approve/Deny </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&lt;id&gt;</td>
+                  <td>
+                    &lt;payer name&gt; <br>
+                    &lt;payer username&gt; <br>
+                    &lt;payer email&gt;
+                  </td>
+                  <td>$&lt;paid &gt;</td>
+                  <td>
+                    &lt;paymode&gt; <br>
+                    &lt;Tnx ID&gt;
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-green mb-1">APPROVE</a> <br>
+                    <a href="#" class="btn btn-red">DENY</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div class="brand-container text-center p-5 pb-0">
+          <h4 class="heading-bg mt-4 mb-3">PENDING RECEIVED PAYMENTS</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th> Level </th>
+                  <th> Cost </th>
+                  <th> Send Payment </th>
+                  <th> Status </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&lt;id&gt;</td>
+                  <td>&lt;level&gt;</td>
+                  <td>$&lt;cost&gt;</td>
+                  <td>
+                    <a href="#" class="btn btn-cyan text-nowrap ">Click here to send payment</a>
+                  </td>
+                  <td>&lt;status&gt;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <!-- ? ended here -->
+
+
+        <div class="brand-container text-center p-5 pb-2">
           <img src="assets/images/backoffice/logo.png" alt="logo" class="img-fluid w-50 mx-auto">
         </div>
         <footer class="backoffice-footer pb-5">
